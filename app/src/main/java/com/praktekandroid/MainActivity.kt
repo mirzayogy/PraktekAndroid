@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -15,10 +16,9 @@ class MainActivity : AppCompatActivity() {
 
         val textView1 = findViewById<TextView>(R.id.textView1)
 
-        textView1.setOnClickListener(View.OnClickListener {
+        textView1.setOnClickListener {
             Toast.makeText(this,"hai",Toast.LENGTH_LONG).show()
-
-        })
+        }
 
 
     }
